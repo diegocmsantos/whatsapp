@@ -1,8 +1,9 @@
 angular
-  .module( 'Whatsapp' )
-  .config( config );
- 
-function config( $stateProvider, $urlRouterProvider ) {
+  .module('Whatsapp')
+  .config(config);
+
+function config($stateProvider, $urlRouterProvider) {
+
   $stateProvider
     .state('tab', {
       url: '/tab',
@@ -17,6 +18,7 @@ function config( $stateProvider, $urlRouterProvider ) {
         }
       }
     });
- 
+
   $urlRouterProvider.otherwise('tab/chats');
+
 }
